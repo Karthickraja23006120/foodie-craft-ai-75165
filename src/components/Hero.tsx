@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 
 export const Hero = () => {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-[#ff7b42] via-[#e94b82] to-[#ff6b5a] text-white py-20 px-4">
+    <section className="relative overflow-hidden bg-gradient-to-br from-[#00F3FF] via-[#00D4E6] to-[#00B8CC] text-white py-20 px-4">
       {/* Floating gradient blobs */}
-      <div className="floating-blob w-96 h-96 bg-orange-500/30 top-10 left-10" />
-      <div className="floating-blob w-80 h-80 bg-pink-500/30 bottom-20 right-20" />
-      <div className="floating-blob w-72 h-72 bg-coral-500/30 top-40 right-40" />
+      <div className="floating-blob w-96 h-96 bg-[#00F3FF]/30 top-10 left-10" />
+      <div className="floating-blob w-80 h-80 bg-[#00D4E6]/30 bottom-20 right-20" />
+      <div className="floating-blob w-72 h-72 bg-[#00B8CC]/30 top-40 right-40" />
       
       <div className="container mx-auto max-w-4xl text-center relative z-10">
         <motion.div

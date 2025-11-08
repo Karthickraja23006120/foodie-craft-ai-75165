@@ -8,46 +8,46 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 200 100% 6%;
+    --background: 184 100% 6%;
     --foreground: 0 0% 98%;
 
-    --card: 200 80% 10%;
+    --card: 184 80% 10%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 200 80% 10%;
+    --popover: 184 80% 10%;
     --popover-foreground: 0 0% 98%;
 
     --primary: 184 100% 50%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 200 90% 45%;
+    --secondary: 184 100% 45%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 200 30% 20%;
-    --muted-foreground: 200 10% 65%;
+    --muted: 184 30% 20%;
+    --muted-foreground: 184 10% 65%;
 
-    --accent: 170 100% 45%;
+    --accent: 184 100% 40%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 200 30% 25%;
-    --input: 200 30% 20%;
+    --border: 184 30% 25%;
+    --input: 184 30% 20%;
     --ring: 184 100% 50%;
 
     --radius: 1rem;
     
-    /* Cyan theme colors */
+    /* Cyan theme colors - monochromatic */
     --cyan-bright: 184 100% 50%;
-    --cyan-deep: 200 90% 45%;
-    --teal-gradient: 170 100% 45%;
-    --blue-deep: 210 80% 35%;
+    --cyan-medium: 184 100% 45%;
+    --cyan-deep: 184 100% 40%;
+    --cyan-darker: 184 100% 30%;
     
-    /* Gradients */
-    --gradient-main: linear-gradient(135deg, hsl(184 100% 50%) 0%, hsl(200 90% 45%) 50%, hsl(170 100% 45%) 100%);
-    --gradient-card: linear-gradient(135deg, hsla(200 40% 15% / 0.7), hsla(200 40% 20% / 0.5));
-    --gradient-hero: linear-gradient(135deg, hsl(184 100% 50%), hsl(200 90% 45%));
+    /* Gradients - cyan only */
+    --gradient-main: linear-gradient(135deg, hsl(184 100% 50%) 0%, hsl(184 100% 45%) 50%, hsl(184 100% 40%) 100%);
+    --gradient-card: linear-gradient(135deg, hsla(184 80% 15% / 0.7), hsla(184 80% 20% / 0.5));
+    --gradient-hero: linear-gradient(135deg, hsl(184 100% 50%), hsl(184 100% 40%));
     --gradient-glow: radial-gradient(circle at 50% 50%, hsla(184 100% 50% / 0.3), transparent 70%);
     
     /* Shadows */
@@ -77,32 +77,32 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 200 100% 6%;
+    --background: 184 100% 6%;
     --foreground: 0 0% 98%;
 
-    --card: 200 80% 10%;
+    --card: 184 80% 10%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 200 80% 10%;
+    --popover: 184 80% 10%;
     --popover-foreground: 0 0% 98%;
 
     --primary: 184 100% 50%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 200 90% 45%;
+    --secondary: 184 100% 45%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 200 30% 20%;
-    --muted-foreground: 200 10% 65%;
+    --muted: 184 30% 20%;
+    --muted-foreground: 184 10% 65%;
 
-    --accent: 170 100% 45%;
+    --accent: 184 100% 40%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 200 30% 25%;
-    --input: 200 30% 20%;
+    --border: 184 30% 25%;
+    --input: 184 30% 20%;
     --ring: 184 100% 50%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
