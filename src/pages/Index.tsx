@@ -63,12 +63,12 @@ const Index = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
-      className="min-h-screen bg-gradient-to-br from-[#0f0818] via-[#1a0f2e] to-[#0f0818] relative overflow-hidden"
+      className="min-h-screen bg-gradient-to-br from-[#001a1f] via-[#002833] to-[#001014] relative overflow-hidden"
     >
       {/* Floating gradient blobs in background */}
-      <div className="floating-blob w-[500px] h-[500px] bg-pink-500/20 -top-20 -left-20" />
-      <div className="floating-blob w-[400px] h-[400px] bg-orange-500/20 top-1/3 -right-20" />
-      <div className="floating-blob w-[600px] h-[600px] bg-purple-500/20 bottom-0 left-1/4" />
+      <div className="floating-blob w-[500px] h-[500px] bg-[#00F3FF]/20 -top-20 -left-20" />
+      <div className="floating-blob w-[400px] h-[400px] bg-[#00D4FF]/20 top-1/3 -right-20" />
+      <div className="floating-blob w-[600px] h-[600px] bg-[#00B8D4]/20 bottom-0 left-1/4" />
       
       <div className="relative z-10">
         <Hero />
