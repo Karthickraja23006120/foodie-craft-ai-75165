@@ -80,8 +80,8 @@ export default {
           "50%": { transform: "translateY(-10px)" },
         },
         "glow-pulse": {
-          "0%, 100%": { opacity: "1", boxShadow: "0 0 20px hsla(340, 85%, 60%, 0.5)" },
-          "50%": { opacity: "0.8", boxShadow: "0 0 40px hsla(340, 85%, 60%, 0.8)" },
+          "0%, 100%": { opacity: "1", boxShadow: "0 0 20px hsla(184, 100%, 50%, 0.5)" },
+          "50%": { opacity: "0.8", boxShadow: "0 0 40px hsla(184, 100%, 50%, 0.8)" },
         },
         "fade-in-up": {
           "0%": { opacity: "0", transform: "translateY(20px)" },
