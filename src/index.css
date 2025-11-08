@@ -1,0 +1,166 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 280 60% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 280 40% 12%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 280 40% 12%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 340 85% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 280 60% 55%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 280 30% 20%;
+    --muted-foreground: 280 10% 65%;
+
+    --accent: 340 70% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 280 30% 25%;
+    --input: 280 30% 20%;
+    --ring: 340 85% 60%;
+
+    --radius: 1rem;
+    
+    /* Athlentiq theme colors */
+    --orange-gradient: 20 100% 65%;
+    --pink-gradient: 340 85% 60%;
+    --coral-gradient: 10 90% 65%;
+    --purple-deep: 280 60% 25%;
+    
+    /* Gradients */
+    --gradient-main: linear-gradient(135deg, hsl(20 100% 65%) 0%, hsl(340 85% 60%) 50%, hsl(10 90% 65%) 100%);
+    --gradient-card: linear-gradient(135deg, hsla(280 40% 15% / 0.7), hsla(280 40% 20% / 0.5));
+    --gradient-hero: linear-gradient(135deg, hsl(340 85% 60%), hsl(280 60% 55%));
+    --gradient-glow: radial-gradient(circle at 50% 50%, hsla(340 85% 60% / 0.3), transparent 70%);
+    
+    /* Shadows */
+    --shadow-soft: 0 2px 20px hsla(340 85% 60% / 0.2);
+    --shadow-card: 0 8px 32px hsla(0 0% 0% / 0.4);
+    --shadow-glow: 0 0 40px hsla(340 85% 60% / 0.4), 0 0 80px hsla(340 85% 60% / 0.2);
+    --shadow-glass: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 280 60% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 280 40% 12%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 280 40% 12%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 340 85% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 280 60% 55%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 280 30% 20%;
+    --muted-foreground: 280 10% 65%;
+
+    --accent: 340 70% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 280 30% 25%;
+    --input: 280 30% 20%;
+    --ring: 340 85% 60%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: var(--shadow-glass);
+  }
+  
+  .glow-effect {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .gradient-text {
+    background: var(--gradient-main);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .floating-blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.4;
+    animation: float 20s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(30px, -30px) scale(1.1); }
+    66% { transform: translate(-20px, 20px) scale(0.9); }
+  }
+}
